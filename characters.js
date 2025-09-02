@@ -33,10 +33,10 @@ function updateCharacterSlot(slot, character, direction) {
     if (character.genders) {
         const gender = slot.dataset.archerGender || 'male';
         characterImgSrc = character.genders[gender].img;
-        genderToggle.style.display = 'flex';
+        genderToggle.style.visibility = 'visible';
     } else {
         characterImgSrc = character.img;
-        genderToggle.style.display = 'none';
+        genderToggle.style.visibility = 'hidden';
     }
 
     // Disable arrows during animation

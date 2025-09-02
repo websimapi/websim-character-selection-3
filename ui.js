@@ -6,7 +6,7 @@ function initializeCharacterSelection() {
         // Initial gender setup for archer
         if(slot.dataset.characterIndex === '1') {
             slot.dataset.archerGender = 'male';
-            slot.querySelector('.gender-toggle-container').style.display = 'flex';
+            slot.querySelector('.gender-toggle-container').style.visibility = 'visible';
         }
 
         // Initial color shader application
